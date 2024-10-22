@@ -14,7 +14,8 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         title = "Storm Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
-        // Do any additional setup after loading the view.
+        // Вызов метода для настройки кнопки "Рекомендовать"
+        setupRecommendButton()
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
@@ -27,6 +28,24 @@ class ViewController: UITableViewController {
             }
         }
     }
+    
+    func setupRecommendButton() {
+        // Создание кнопки "Рекомендовать приложение"
+        let recommendButton = UIBarButtonItem(title: "Рекомендувати", style: .plain, target: self, action: #selector(recommendTapped))
+        navigationItem.rightBarButtonItem = recommendButton
+    }
+    
+    @objc func recommendTapped() {
+        let appURL = URL(string: "https://github.com/Prysiazhnyi?tab=repositories")!
+        let shareText = "https://github.com/Prysiazhnyi?tab=repositories"
+        
+        let itemsToShare = [shareText, appURL] as [Any]
+        
+        let activityVC = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
+        activityVC.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem // Настройка для iPad
+        present(activityVC, animated: true, completion: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
     }

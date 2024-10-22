@@ -36,14 +36,24 @@ class DetailViewController: UIViewController {
             print("No image found")
             return
         }
+        let imageName = selectedImage ?? "unknown_image.jpg"
+        // Создайте временный файл
+            let temporaryDirectory = FileManager.default.temporaryDirectory
+            let fileURL = temporaryDirectory.appendingPathComponent(imageName)
 
-        // Добавляем имя изображения
-            let imageName = selectedImage ?? "unknown_image.jpg"
-            let itemsToShare: [Any] = [image, imageName]
-        
-        let vc = UIActivityViewController(activityItems: itemsToShare, applicationActivities: [])
-        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
-        present(vc, animated: true)
+            do {
+                // Запишите данные изображения в файл
+                try image.write(to: fileURL)
+                
+                // Передаем файл вместо данных изображения
+                let itemsToShare: [Any] = [fileURL]
+
+                let vc = UIActivityViewController(activityItems: itemsToShare, applicationActivities: nil)
+                vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+                present(vc, animated: true)
+            } catch {
+                print("Error saving image: \(error)")
+            }
     }
     /*
     // MARK: - Navigation

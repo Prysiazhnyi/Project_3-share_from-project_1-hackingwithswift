@@ -11,17 +11,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E0CA40652CC15115002E92B6 /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0CA40652CC15115002E92B6 /* Project-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0CA407D2CC15121002E92B6 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E0CA40772CC15116002E92B6 /* Exceptions for "Project1" folder in "Project1" target */ = {
+		E0CA40772CC15116002E92B6 /* Exceptions for "Project1" folder in "Project-3" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = E0CA40642CC15115002E92B6 /* Project1 */;
+			target = E0CA40642CC15115002E92B6 /* Project-3 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,7 +29,7 @@
 		E0CA40672CC15115002E92B6 /* Project1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				E0CA40772CC15116002E92B6 /* Exceptions for "Project1" folder in "Project1" target */,
+				E0CA40772CC15116002E92B6 /* Exceptions for "Project1" folder in "Project-3" target */,
 			);
 			path = Project1;
 			sourceTree = "<group>";
@@ -59,7 +59,7 @@
 		E0CA40662CC15115002E92B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E0CA40652CC15115002E92B6 /* Project1.app */,
+				E0CA40652CC15115002E92B6 /* Project-3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E0CA40642CC15115002E92B6 /* Project1 */ = {
+		E0CA40642CC15115002E92B6 /* Project-3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0CA40782CC15116002E92B6 /* Build configuration list for PBXNativeTarget "Project1" */;
+			buildConfigurationList = E0CA40782CC15116002E92B6 /* Build configuration list for PBXNativeTarget "Project-3" */;
 			buildPhases = (
 				E0CA40612CC15115002E92B6 /* Sources */,
 				E0CA40622CC15115002E92B6 /* Frameworks */,
@@ -82,11 +82,11 @@
 			fileSystemSynchronizedGroups = (
 				E0CA40672CC15115002E92B6 /* Project1 */,
 			);
-			name = Project1;
+			name = "Project-3";
 			packageProductDependencies = (
 			);
 			productName = Project1;
-			productReference = E0CA40652CC15115002E92B6 /* Project1.app */;
+			productReference = E0CA40652CC15115002E92B6 /* Project-3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +104,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E0CA40602CC15115002E92B6 /* Build configuration list for PBXProject "Project1" */;
+			buildConfigurationList = E0CA40602CC15115002E92B6 /* Build configuration list for PBXProject "Project-3" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E0CA40642CC15115002E92B6 /* Project1 */,
+				E0CA40642CC15115002E92B6 /* Project-3 */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +160,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -188,6 +189,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E0CA40602CC15115002E92B6 /* Build configuration list for PBXProject "Project1" */ = {
+		E0CA40602CC15115002E92B6 /* Build configuration list for PBXProject "Project-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0CA407B2CC15116002E92B6 /* Debug */,
@@ -332,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E0CA40782CC15116002E92B6 /* Build configuration list for PBXNativeTarget "Project1" */ = {
+		E0CA40782CC15116002E92B6 /* Build configuration list for PBXNativeTarget "Project-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E0CA40792CC15116002E92B6 /* Debug */,
